@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="content">
+            <!--img-->
+        </div>
+        <form action="/login" >
+            <h3>Entrar</h3>
+            <p class="desc">Olá, seja bem-vindo novamente ao site! Preencha suas credenciais para acessar o seu painel!</p>
+            <div class="camp">
+                <input type="text" name="username" id="username"><label for="username"><i class="fa-solid fa-user"></i></label>
+                <p class="msg
+                " id="msgUsername">Campo de usuário obrigatório</p>
+            </div>
+            <div class="camp">
+               <input type="password" name="password" id="password"><label id="eyeActive" for="password"><i id="eye" class="fa-solid fa-eye active"></i><i id="eyeView" class="fa-sharp fa-solid fa-eye-slash "></i></label>
+               <p class="msg
+                " id="msgPassword">Campo de senha obrigatório</p>
+                <p class="msg
+                " id="msgInvalid">Email/senha inválidos</p>
+            </div>
+            <div class="success">
+                <span class="spin"></span>
+            </div>
+            <div class="btn">
+                <div id="btnSubmit">
+                    Entrar
+                </div>
+            </div>
+            <div class="opt">
+                <a href="#">Cadastre-se</a><span id="bar">|</span><a href="#">Esqueceu senha?</a>
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

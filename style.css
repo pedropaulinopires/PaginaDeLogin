@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+:root{
+    --azul : #002E74;
+    --azulEscuro : #002E74;
+}
+h1,h2,h3,p{
+    font-family: 'Libre Baskerville', serif;
+}
+
+body{
+    background-image: url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+main{
+    background-color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    width: 90%;
+    max-width: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+form{
+    display: block;
+    float: left;
+}
+form h3{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--azulEscuro);
+    padding-bottom: .6rem;
+}
+
+form p.desc{
+    text-align: center;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 0px 50px;
+    margin-bottom: 2rem;
+}
+
+form p{
+    text-align: center;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+form .camp{
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+form .camp input{
+    border: 1px solid var(--azulEscuro);
+    border-radius: .3rem;
+    height: 40px;
+    width: 80%;
+    margin-right: -30px;
+    max-width: 300px;
+    padding: 0px 30px 0px 10px;
+    font-size: 15px;
+
+}
+
+
+form .camp input:focus {
+    color: rgb(93, 93, 93);
+}
+i{
+    color: var(--azulEscuro);
+    position: relative;
+    width: 20px;
+    font-size: 25px;
+    top: 3px;
+}
+#eye{
+    left: -5.5px;
+}
+
+#eyeView{
+    left: -7px;
+}
+
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.btn div{
+    border: none;
+    background-color: var(--azulEscuro);
+    padding: 8px 15px;
+    border-radius: .4rem;
+    font-size: 18px;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.btn div:hover{
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+.opt{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.opt a{
+    color: var(--azulEscuro);
+    font-size: 14px;
+    text-decoration: none;
+}
+#bar{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: black;
+}
+
+
+.msg{
+    color: rgb(231, 6, 6);
+    opacity: 0;
+    height: 0;
+}
+
+.msg.active{
+    opacity: 1;
+    height: 10px;
+    transition: opacity .3s ease-in-out;
+}
+
+form .camp input.error{
+    border: 1px solid red;
+}
+
+#eye.active{
+    display: none;
+    opacity: 0;
+}
+#eyeView.active{
+    display: none;
+    opacity: 0;
+}
+div.success{
+    display: none;
+    text-align: center;
+    height: 40px;
+    opacity: 1;
+    margin-bottom: 2rem;
+
+}
+.success.active{
+    display: block;
+}
+@keyframes rotate{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.spin{
+    display: block;
+    width: 10px;
+    margin: auto;
+    padding:14px 14px;
+    border-top: .4rem solid var(--azulEscuro);
+    border-bottom: .4rem solid var(--azulEscuro);
+    border-left: .4rem solid  rgb(141, 141, 141);
+    border-right: .4rem solid rgb(141, 141, 141);
+    border-radius: 50%;    
+}
+
+.spin.active{
+    animation: rotate 1s linear infinite;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+    .content{
+        display: block;
+        float: right;
+        width: 50%;
+        background-image: url(img.jpg);
+        background-size: cover;
+        height: 460px;
+    }
+    form{
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    main{
+        max-width: 800px;
+    }    
+}
